@@ -1,0 +1,19 @@
+const express = require('express');
+const fetch = require('node-fetch');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+const API_URL = 'https://finfo-api.vndirect.com.vn/v4/stock_prices?symbols=VN30F1M&size=30';
+
+app.get('/api/vn30', async (req, res) => {
+  try {
+    const response = await fetch(API_URL);
+    const data = await response.json();
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: 'Không lấy được dữ liệu' });
+  }
+});
+
+app.listen(PORT, () => console.log(`Proxy server VN30 chạy tại port ${PORT}`));
