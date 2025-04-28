@@ -1,0 +1,13 @@
+{
+  "name": "vn30-proxy-server",
+  "version": "1.0.0",
+  "description": "Proxy server lấy dữ liệu VN30 realtime",
+  "main": "proxy-server.js",
+  "scripts": {
+    "start": "node proxy-server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7"
+  }
+}
