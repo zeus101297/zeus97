@@ -1,0 +1,5 @@
+Mã cổ phiếu,Số lượng,Giá mua,Giá hiện tại,Giá trị hiện tại,Lãi/Lỗ,Tỷ lệ Lãi/Lỗ,Cảnh báo
+AAPL,10,150,=GOOGLEFINANCE(A2,"price"),=B2*D2,=E2-C2*B2,=F2/(C2*B2),=IF(G2>0.015,"🔼 Tăng mạnh",IF(G2<-0.015,"🔻 Giảm mạnh","Ổn định"))
+FPT,50,85,=GOOGLEFINANCE(A3,"price"),=B3*D3,=E3-C3*B3,=F3/(C3*B3),=IF(G3>0.015,"🔼 Tăng mạnh",IF(G3<-0.015,"🔻 Giảm mạnh","Ổn định"))
+VNM,100,70,=GOOGLEFINANCE(A4,"price"),=B4*D4,=E4-C4*B4,=F4/(C4*B4),=IF(G4>0.015,"🔼 Tăng mạnh",IF(G4<-0.015,"🔻 Giảm mạnh","Ổn định"))
+MSFT,20,300,=GOOGLEFINANCE(A5,"price"),=B5*D5,=E5-C5*B5,=F5/(C5*B5),=IF(G5>0.015,"🔼 Tăng mạnh",IF(G5<-0.015,"🔻 Giảm mạnh","Ổn định"))
